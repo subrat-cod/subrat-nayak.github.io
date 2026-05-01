@@ -1,0 +1,1193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: #fff;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00ff00;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.home-content {
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0.5rem 0;
+}
+
+.home-content h3 span {
+    color: #00ff00;
+}
+
+.multiple-text {
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+.social-media {
+    margin: 2rem 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 2px solid #00ff00;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+    transition: 0.5s ease;
+}
+
+.social-media a:hover {
+    background: #00ff00;
+    color: #080808;
+    box-shadow: 0 0 25px #00ff00;
+    transform: scale(1.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #00ff00;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #00ff00;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #080808;
+    transition: 0.5s ease;
+    width: fit-content;
+}
+
+.btn:hover {
+    box-shadow: none;
+    background: #fff;
+}
+
+.hero-img-templates {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    width: 32vw;
+    height: 32vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #00ff00;
+    animation: float 4s ease-in-out infinite;
+}
+
+.circle-1 {
+    width: 95px;
+    height: 95px;
+    top: -10%;
+    left: -5%;
+}
+
+.circle-2 {
+    width: 75px;
+    height: 75px;
+    top: 15%;
+    right: -5%;
+    animation-delay: 1.5s;
+}
+
+.main-circle {
+    width: 26vw;
+    height: 26vw;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #00ff00;
+    box-shadow: 0 0 1rem #00ff00;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+
+.main-circle img, .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Skills section styling */
+.skills {
+    background: #080808;
+    color: #fff;
+    padding: 10rem 9% 2rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 4rem;
+}
+
+.heading span {
+    color: #00ff00;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.skills-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #00ff00;
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: 0.5s ease;
+    box-shadow: 0 0 1rem #00ff00;
+    backdrop-filter: blur(10px);
+}
+
+.skills-box i {
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+    transition: 0.5s ease;
+}
+
+.skills-box h3 {
+    font-size: 2.6rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.skills-box p {
+    font-size: 1.4rem;
+    color: #aaa;
+}
+
+.skills-box:hov
+ .circle-graph-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 55px 25px;
+    
+    /* 3D Glassmorphism Gradient Background */
+    background: linear-gradient(135deg, rgba(20, 20, 40, 0.7), rgba(10, 10, 20, 0.9));
+    border-radius: 24px;
+    margin: 80px auto;
+    max-width: 1100px;
+    width: 100%;
+    
+    /* 3D Neon 3-Color Glow Effect */
+    border: 1px solid rgba(0, 255, 102, 0.3);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.6),
+        inset 0 1px 4px rgba(0, 255, 102, 0.4),
+        0 0 20px rgba(0, 255, 102, 0.2),
+        0 0 50px rgba(0, 150, 255, 0.1);
+    backdrop-filter: blur(15px);
+}
+
+.graph-box {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* 3D Lift Effect on Hover */
+.graph-box:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.graph-box h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #a9a9c6;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.graph-box p {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, #00ff66, #00c3ff);
+    webkit-background-clip: text;
+    webkit-text-fill-color: transparent;
+}
+
+.circular-progress {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    
+    /* Modern 3D Dark Glass Ring */
+    background: conic-gradient(#101018 0deg, #101018 360deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    box-shadow: 
+        inset 5px 5px 15px rgba(0, 0, 0, 0.7), 
+        inset -2px -2px 8px rgba(255, 255, 255, 0.05),
+        0 0 25px rgba(0, 255, 102, 0.3);
+        
+    margin: 0 auto;
+    transition: all 0.4s ease;
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    background: #0b0b14;
+    border-radius: 50%;
+    box-shadow: 
+        inset 3px 3px 8px rgba(0, 0, 0, 0.8),
+        inset -1px -1px 4px rgba(255, 255, 255, 0.05);
+}
+
+.progress-value {
+    position: relative;
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0 0 12px rgba(0, 255, 102, 0.6);
+}
+
+/* 3D Glow on hover */
+.circular-progress:hover {
+    box-shadow: 
+        0 0 35px rgba(0, 255, 102, 0.5),
+        0 0 15px rgba(0, 195, 255, 0.3);
+    border-color: rgba(0, 255, 102, 0.6);
+}
+/* --- Projects Section --- */
+
+.projects {
+    background: #0b0b14;
+    padding: 80px 8% 60px;
+}
+
+.projects h2.heading {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.projects h2.heading span {
+    color: #00ff66;
+    text-shadow: 0 0 15px rgba(0, 255, 102, 0.4);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-box {
+    background: rgba(20, 20, 40, 0.7);
+    border: 2px solid rgba(0, 255, 102, 0.2);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.3s, box-shadow 0.3s;
+}
+
+.projects-box:hover {
+    transform: translateY(-8px);
+    border-color: #00ff66;
+    box-shadow: 
+        0 10px 30px rgba(0, 255, 102, 0.15),
+        inset 0 0 15px rgba(0, 255, 102, 0.1);
+}
+
+.projects-box i {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.projects-box h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.projects-box p {
+    font-size: 14px;
+    color: #a0a0c0;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.projects-box .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: rgba(0, 255, 102, 0.15);
+    color: #00ff66;
+    border: 1.5px solid #00ff66;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.projects-box .btn:hover {
+    background: #00ff66;
+    color: #0b0b14;
+    box-shadow: 0 0 15px #00ff66;
+}
+
+/* --- Education Section --- */
+
+.education {
+    background: #0b0b14;
+    padding: 80px 8% 60px;
+}
+
+.education h2.heading {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.education h2.heading span {
+    color: #00ff66;
+    text-shadow: 0 0 15px rgba(0, 255, 102, 0.4);
+}
+
+.education-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.education-box {
+    flex: 1 1 45rem;
+    background: rgba(20, 20, 40, 0.7);
+    border: 2px solid rgba(0, 255, 102, 0.2);
+    border-radius: 2rem;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.education-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border-left: .3rem solid #00ff66;
+}
+
+.education-content .content h3 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.education-content .content p {
+    font-size: 1.5rem;
+    color: #a0a0c0;
+    margin: 5px 0;
+}
+
+.gpa-badge {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 15px;
+    background: rgba(0, 255, 102, 0.2);
+    color: #00ff66;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+/* --- About Me Section --- */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background: #0f0f1a;
+    padding: 80px 10%;
+}
+
+.about-img img {
+    width: 35vw;
+    border-radius: 2rem;
+    box-shadow: 0 0 25px rgba(0, 255, 102, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.about-img img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 35px rgba(0, 255, 102, 0.5);
+}
+
+.about-content h2 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.about-content h2 span {
+    color: #00ff66;
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+}
+
+.about-content h3 {
+    font-size: 2.2rem;
+    color: #00ff66;
+    margin: 1rem 0;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    color: #a0a0c0;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.about-content .btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: #00ff66;
+    color: #0b0b14;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 3rem;
+    box-shadow: 0 0 15px #00ff66;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.about-content .btn:hover {
+    box-shadow: 0 0 25px #00ff66;
+    transform: scale(1.02);
+}
+/* --- Rotating and Floating About Image Effect --- */
+
+.about-img img {
+    width: 35vw;
+    border-radius: 2rem;
+    box-shadow: 0 0 25px rgba(0, 255, 102, 0.3);
+    
+    /* 3D Animation and Rotation Effect */
+    animation: floatAndRotate 6s ease-in-out infinite;
+    transition: all 0.4s ease;
+}
+
+/* Hover Effect - Animation ta pause heijiba ebang shadow barhibo */
+.about-img img:hover {
+    animation-play-state: paused;
+    box-shadow: 0 0 45px rgba(0, 255, 102, 0.6), 
+                0 0 20px rgba(0, 195, 255, 0.4);
+    transform: scale(1.03) rotate(2deg);
+}
+
+/* Animation Keyframes */
+@keyframes floatAndRotate {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(3deg);
+    }
+}
+/* --- About Heading Neon Animation --- */
+
+.about-content .heading {
+    font-size: 5rem;
+    color: #fff;
+    position: relative;
+    letter-spacing: 2px;
+    animation: neonGlowHeading 3s ease-in-out infinite;
+}
+
+.about-content .heading span {
+    color: #00ff66;
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.3);
+}
+
+@keyframes neonGlowHeading {
+    0%, 100% {
+        text-shadow: 0 0 10px #00ff66, 
+                     0 0 20px rgba(0, 255, 102, 0.2);
+        transform: scale(1);
+    }
+    50% {
+        text-shadow: 0 0 20px #00ff66, 
+                     0 0 40px #00c3ff, 
+                     0 0 60px #00ff66;
+        transform: scale(1.02);
+    }
+}
+/* --- Certificate Section --- */
+
+.certificates {
+    background: #0b0b14;
+    padding: 80px 8% 60px;
+}
+
+.certificates h2.heading {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.certificates h2.heading span {
+    color: #00ff66;
+    text-shadow: 0 0 15px rgba(0, 255, 102, 0.4);
+}
+
+.certificate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.certificate-box {
+    background: rgba(20, 20, 40, 0.7);
+    border: 2px solid rgba(0, 255, 102, 0.2);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.3s, box-shadow 0.3s;
+    animation: floatEffect 4s ease-in-out infinite;
+}
+
+.certificate-box:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #00ff66;
+    box-shadow: 
+        0 10px 30px rgba(0, 255, 102, 0.2),
+        inset 0 0 15px rgba(0, 255, 102, 0.1);
+}
+
+.certificate-box i {
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(0, 255, 102, 0.6);
+}
+
+.certificate-box h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.certificate-box p {
+    font-size: 14px;
+    color: #a0a0c0;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.certificate-box .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: rgba(0, 255, 102, 0.15);
+    color: #00ff66;
+    border: 1.5px solid #00ff66;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.certificate-box .btn:hover {
+    background: #00ff66;
+    color: #0b0b14;
+    box-shadow: 0 0 20px #00ff66;
+}
+/* --- Contact Section with 3D Red-Blue Animation --- */
+
+.contact {
+    background: #0b0b14;
+    padding: 80px 10%;
+}
+
+.contact h2.heading {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 40px;
+    color: #fff;
+    position: relative;
+    letter-spacing: 2px;
+    animation: neonGlowRedBlue 3s ease-in-out infinite;
+}
+
+.contact h2.heading span {
+    color: #ff3333; /* Red highlight */
+    text-shadow: 0 0 15px rgba(255, 51, 51, 0.6);
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input, 
+.contact form textarea {
+    width: 100%;
+    padding: 1.8rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: rgba(20, 20, 40, 0.7);
+    border: 2px solid rgba(255, 51, 51, 0.3);
+    border-radius: 1.5rem;
+    margin: 1.2rem 0;
+    resize: none;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form .input-box input:focus, 
+.contact form textarea:focus {
+    border-color: #ff3333;
+    box-shadow: 0 0 15px rgba(255, 51, 51, 0.4), 
+                inset 0 0 10px rgba(255, 51, 51, 0.1);
+    transform: translateY(-2px);
+}
+
+.contact form textarea {
+    height: 18rem;
+}
+
+.contact form input.btn {
+    padding: 1.5rem 4rem;
+    cursor: pointer;
+    background: rgba(255, 51, 51, 0.15);
+    color: #ff3333;
+    border: 1.5px solid #ff3333;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    border-radius: 3rem;
+    box-shadow: 0 0 15px #ff3333;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact form input.btn:hover {
+    background: #ff3333;
+    color: #ffffff;
+    box-shadow: 0 0 25px #ff3333, 0 0 10px #00c3ff;
+    transform: scale(1.02);
+}
+
+/* --- Animation for Red-Blue Heading --- */
+
+@keyframes neonGlowRedBlue {
+    0%, 100% {
+        text-shadow: 0 0 10px #ff3333, 
+                     0 0 20px rgba(255, 51, 51, 0.3);
+        transform: scale(1);
+    }
+    50% {
+        text-shadow: 0 0 25px #ff3333, 
+                     0 0 45px #00c3ff, 
+                     0 0 65px #ff3333;
+        transform: scale(1.02);
+    }
+}
+/* --- Extra 3D Tilt ebang Neon Animation Effects --- */
+
+.projects-box, .certificate-box, .graph-box {
+    transform-style: preserve-3d;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease;
+}
+
+/* 3D Floating Effect */
+@keyframes threeDFloat {
+    0%, 100% {
+        transform: translateY(0) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotateX(2deg) rotateY(-3deg);
+    }
+}
+
+/* Button 3D Lighting Animation */
+.btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        120deg, 
+        transparent, 
+        rgba(0, 255, 102, 0.3), 
+        transparent
+    );
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+/* --- Experience Section --- */
+.experience {
+    background: #0b0b14;
+    padding: 80px 8% 60px;
+}
+
+.experience h2.heading {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.experience h2.heading span {
+    color: #00ff66;
+    text-shadow: 0 0 15px rgba(0, 255, 102, 0.4);
+}
+
+.experience-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.experience-box {
+    flex: 1 1 45rem;
+    background: rgba(20, 20, 40, 0.7);
+    border: 2px solid rgba(0, 255, 102, 0.2);
+    border-radius: 2rem;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.experience-box:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #00ff66;
+    box-shadow: 0 10px 30px rgba(0, 255, 102, 0.15), inset 0 0 15px rgba(0, 255, 102, 0.1);
+}
+
+.experience-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border-left: .3rem solid #00ff66;
+}
+
+.experience-content .content h3 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.experience-content .content p {
+    font-size: 1.5rem;
+    color: #a0a0c0;
+    margin: 5px 0;
+}
+
+.exp-badge {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px 15px;
+    background: rgba(0, 255, 102, 0.2);
+    color: #00ff66;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.exp-desc {
+    margin-top: 10px;
+    font-size: 1.3rem !important;
+    line-height: 1.5;
+}
+/* --- Experience Data Analytics Glowing ebang Animation --- */
+
+.experience-box .exp-desc {
+    position: relative;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0, 255, 102, 0.4);
+    animation: textGlow 3s ease-in-out infinite;
+}
+
+/* Uparaku uthiba ebang talaku padiba (floating) animation */
+.experience-box {
+    animation: floatEffectCustom 4s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+    0%, 100% {
+        text-shadow: 0 0 8px #00ff66;
+    }
+    50% {
+        text-shadow: 0 0 16px #00ff66, 0 0 25px #00c3ff;
+    }
+}
+
+@keyframes floatEffectCustom {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+/* --- Home & Hero Section Styles --- */
+
+/* --- Home & Hero Section --- */
+
+/* --- Dangerous Attractive Red Glow Theme --- */
+/* --- High-Version Danger Red-Blue Theme --- */
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12rem 9% 6rem;
+    background: #0b0b14;
+    min-height: 85vh; 
+    width: 100%;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.home-content h1 .name-highlight {
+    color: #ff3333;
+    text-shadow: 0 0 18px rgba(255, 51, 51, 0.6);
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    color: #a0a0c0;
+    margin: 1.5rem 0 3rem;
+}
+
+.welcome-banner {
+    background: rgba(20, 10, 10, 0.8);
+    border: 1.5px solid #ff3333;
+    border-radius: 20px;
+    padding: 15px 25px;
+    max-width: 500px;
+    box-shadow: 0 0 25px rgba(255, 51, 51, 0.3);
+    backdrop-filter: blur(8px);
+    margin-bottom: 30px;
+}
+
+.typing-text {
+    font-size: 1.4rem;
+    color: #ff3333;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(255, 51, 51, 0.5);
+}
+
+.home-content .btn-box {
+    display: flex;
+    gap: 20px;
+}
+
+.home-content .btn {
+    padding: 12px 32px;
+    background: #ff3333;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #ff3333;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+}
+
+.home-content .btn.glow-btn {
+    background: transparent;
+    color: #00c3ff;
+    border: 1.5px solid #00c3ff;
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.3);
+}
+
+.home-content .btn:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 0 35px #ff3333, 0 0 15px #00c3ff;
+}
+
+.home-content .btn.glow-btn:hover {
+    background: #00c3ff;
+    color: #0b0b14;
+    box-shadow: 0 0 25px #00c3ff;
+}
+
+.home-img {
+    position: relative;
+    width: 38vw;
+    height: 38vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3D Danger Red Glowing AI Sphere */
+.glowing-3d-sphere-red {
+    width: 30vw;
+    height: 30vw;
+    background: radial-gradient(circle at 35% 35%, #ff3333, #00c3ff, #050508);
+    border-radius: 50%;
+    box-shadow: 0 0 60px rgba(255, 51, 51, 0.4), 
+                inset 0 0 60px rgba(0, 195, 255, 0.3);
+    animation: floatEffectCustom 5s ease-in-out infinite, sphereGlowRed 4s ease-in-out infinite alternate;
+}
+
+@keyframes sphereGlowRed {
+    0% {
+        transform: scale(0.95);
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: scale(1.06);
+        filter: hue-rotate(-20deg);
+    }
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 3%; /* Padding ku adjust kara gela */
+    background: rgba(11, 11, 20, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.navbar a {
+    font-size: 1.35rem; /* Font size tike chhota kara gela */
+    color: #fff;
+    margin-left: 2rem; /* Margin space 2.5rem ru 2rem ku kama gela */
+    text-decoration: none;
+    transition: .3s;
+}
+/* --- Particles Background Style --- */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0b0b14;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* --- Glowing Snow and Star Effect --- */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0b0b14;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10px) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) translateX(-20px);
+        opacity: 0;
+    }
+}
+/* --- Glowing Snow and Star Effect --- */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0b0b14;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10px) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) translateX(-20px);
+        opacity: 0;
+    }
+}
