@@ -17,7 +17,7 @@ Here is a glimpse of my live portfolio website:
 ### 🌅 Hero Section & Welcome Interface
 <img src="https://raw.githubusercontent.com/subrat-cod/subrat-nayak.github.io/main/image%20copy.png" alt="Portfolio Home Section" width="80%">
 
-*Note: Replace the URL above with your actual screenshot path if you upload the home section image with a different name.*
+
 
 ---
 
@@ -34,3 +34,5 @@ Here is a glimpse of my live portfolio website:
 ## 🤝 Connect With Me
 * **Website:** [subrat-nayak.github.io](https://subrat-nayak.github.io)
 * **GitHub:** [subrat-cod](https://github.com/subrat-cod)
+* <img src="home-preview.png" alt="Portfolio Home" width="45%">
+<img src="about-preview.png" alt="About Me Section" width="45%">
