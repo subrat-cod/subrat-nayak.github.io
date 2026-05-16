@@ -1,6 +1,4 @@
-# 🌐 Live Portfolio: **[subrat-nayak.github.io](https://subrat-nayak.github.io)** 🔥
-
----
+# 🌐 Live Portfolio: **[subrat-cod.github.io/subrat-nayak.github.io](https://subrat-cod.github.io/subrat-nayak.github.io/)** 🔥
 
 # About Me 🚀
 
