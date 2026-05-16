@@ -34,5 +34,5 @@ Here is a glimpse of my live portfolio website:
 ## 🤝 Connect With Me
 * **Website:** [subrat-nayak.github.io](https://subrat-nayak.github.io)
 * **GitHub:** [subrat-cod](https://github.com/subrat-cod)
-* <img src="home-preview.png" alt="Portfolio Home" width="45%">
-<img src="about-preview.png" alt="About Me Section" width="45%">
+*: screen shot:
+<img width="756" height="1600" alt="image" src="https://github.com/user-attachments/assets/9f72f1df-ba88-48d3-a800-eeb7a180e1a5" />
